@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olis naturals - EcoJoves</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f6f2e9;
+      color: #4a4a48;
+    }
+
+    /* ─────────── HEADER ─────────── */
+    /* --- Logo i capçalera --- */
+header {
+  display: flex;
+  justify-content: space-between; /* logo a l'esquerra, menú a la dreta */
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #D8E8D8; /* verd menta clar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  height: 70px; /* canvia la mida si vols */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Menú */
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Enllaços del menú */
+nav a {
+  text-decoration: none;
+  color: #4A4A48; /* gris fosc */
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: transparent;
+  transition: background-color 0.18s ease, color 0.18s ease;
+  border: none;
+  box-shadow: none;
+}
+
+/* Quan passes el ratolí per sobre */
+nav a:hover {
+  background-color: #5A6D5A; /* verd fosc */
+  color: #ffffff; /* text blanc */
+}
+
+/* Botó de la pàgina actual */
+nav a.active {
+  background-color: #5A6D5A; /* verd fosc */
+  color: #ffffff; /* text blanc */
+  border: none;
+  box-shadow: none;
+}
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #6b8e6d;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4a4a48;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #66c0ff;
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 0 8px rgba(102, 192, 255, 0.4);
+    }
+
+    nav a.active {
+      background-color: #5a8f5a;
+      color: white;
+      border-color: transparent;
+    }
+
+    /* ─────────── MAIN ─────────── */
+    main {
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      color: #6b8e6d;
+      margin-bottom: 30px;
+    }
+
+    .product {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      color: #6b8e6d;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    /* ─────────── BOTONS VERDS ─────────── */
+    .product .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background-color: #5a8f5a; /* verd suau principal */
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product .btn:hover {
+      background-color: #4d7a4d; /* verd més fosc al hover */
+      box-shadow: 0 0 8px rgba(90, 143, 90, 0.4);
+    }
+
+    footer {
+      background-color: #6b8e6d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../assets\Images\Diseño sin título.png" alt="EcoJoves logo">
+      </a>
+    </div>    
+    <nav>
+      <a href="../index.html">Inici</a>
+      <a href="../aceites-naturales\index-olis naturals.html" class="active">Olis naturals</a>
+      <a href="../cojines-terapeuticos\index-coixins terapeutics.html">Coixins Terapèutics</a>
+      <a href="../sabons\index-sabond.html">Sabons</a>
+      <a href="../espelmes-soja\index-espelmes-soja.html">Espelmes Naturals</a>
+      <a href="../productes-terapeutics\index-productes-terapéutics.html">Productes Terapèutics</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Olis naturals</h1>
+
+    <div class="product">
+      <img src="../assets/images/Oli d'argan bio 30ml.png" alt="Oli d'Argan Bio 30 ml">
+      <h3>Oli d'Argan Bio 30 ml</h3>
+      <p>Hidratació intensa i natural per a pell i cabell.</p>
+      <a class="btn" href="../aceites-naturales\Oli d'argan.html">Veure</a>
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/Oli de rosa mosqueta 30ml.png" alt="Oli de Rosa Mosqueta 30 ml">
+      <h3>Oli de Rosa Mosqueta 30 ml</h3>
+      <p>Regeneració i lluminositat per a la pell.</p>
+      <a class="btn" href="../aceites-naturales\Oli de rosa de mosqueta.html">Veure</a>
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/Oli essencial d'arbre del te 30ml.jpg" alt="Oli essencial d'arbre del te 30 ml">
+      <h3>Oli essencial d'arbre del te 30 ml</h3>
+      <p>Purificant natural per a pell i ambient.</p>
+      <a class="btn" href="../aceites-naturales\Oli d'arbre del te.html">Veure</a>
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/Oli essencial d'eucaliptus 30ml.png" alt="Oli essencial d'eucaliptus 30ml">
+      <h3>Oli essencial d'eucaliptus 30ml</h3>
+      <p>Respira millor amb un aroma fresc i pur.</p>
+      <a class="btn" href="../aceites-naturales\Oli essencial d'eucaliptus.html">Veure</a>
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/Oli essencial de lavanda 30ml.jpg" alt="Oli essencial de lavanda 30ml">
+      <h3>Oli essencial de lavanda 30ml</h3>
+      <p>Relax i benestar en estat pur.</p>
+      <a class="btn" href="../aceites-naturales\Oli essencial de lavanda.html">Veure</a>
+    </div>
+
+    <div class="product">
+      <img src="../assets\Images\Oli essencial de llimona 30 ml.png" alt="Oli essencial de llimona 30ml">
+      <h3>Oli essencial de llimona 30ml</h3>
+      <p>Energia i frescor per al teu dia a dia</p>
+      <a class="btn" href="../aceites-naturales\Oli essencial de llimona.html">Veure</a>
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/Oli essencial de menta 30ml.png" alt="Oli essencial de menta 30ml">
+      <h3>Oli essencial de menta 30ml</h3>
+      <p>Refresca i desperta els sentits.</p>
+      <a class="btn" href="../aceites-naturales\Oli essencial de menta.html">Veure</a>
+    </div>
+
+    <div class="product">
+      <img src="../assets/images/Oli essencial de romaní 30ml.jpg" alt="Oli essencial de romaní 30ml">
+      <h3>Oli essencial de romaní 30ml</h3>
+      <p>Energia natural i vitalitat per al cos.</p>
+      <a class="btn" href="../aceites-naturales\Oli essencial de romaní.html">Veure</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 EcoJoves – Institut Nou d'Argentona</p>
+  </footer>
+
+</body>
+</html>
