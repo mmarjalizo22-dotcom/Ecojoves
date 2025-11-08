@@ -5,206 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EcoJoves - Vendes Solidàries</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f6f2e9;
-      color: #4a4a48;
-    }
-
-    /* ─────────── HEADER ─────────── */
-    /* --- Logo i capçalera --- */
-header {
-  display: flex;
-  justify-content: space-between; /* logo a l'esquerra, menú a la dreta */
-  align-items: center;
-  padding: 15px 40px;
-  background-color: #D8E8D8; /* verd menta clar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Logo */
-.logo img {
-  height: 70px; /* canvia la mida si vols */
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-
-/* Menú */
-nav {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-/* Enllaços del menú */
-nav a {
-  text-decoration: none;
-  color: #4A4A48; /* gris fosc */
-  font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 8px;
-  background: transparent;
-  transition: background-color 0.18s ease, color 0.18s ease;
-  border: none;
-  box-shadow: none;
-}
-
-/* Quan passes el ratolí per sobre */
-nav a:hover {
-  background-color: #5A6D5A; /* verd fosc */
-  color: #ffffff; /* text blanc */
-}
-
-/* Botó de la pàgina actual */
-nav a.active {
-  background-color: #5A6D5A; /* verd fosc */
-  color: #ffffff; /* text blanc */
-  border: none;
-  box-shadow: none;
-}
-
-
-    .logo {
-      font-size: 1.8em;
-      font-weight: bold;
-      color: #6b8e6d;
-    }
-
-    nav {
-      display: flex;
-      gap: 12px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #4a4a48;
-      font-weight: bold;
-      padding: 8px 14px;
-      border-radius: 8px;
-      border: 2px solid transparent;
-      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Hover: azul pastel marcado, opaco, sin bordes */
-    nav a:hover {
-      background-color: #66c0ff; /* azul pastel visible */
-      color: white;
-      border-color: transparent;
-      box-shadow: 0 0 8px rgba(102, 192, 255, 0.4); /* ligero resplandor */
-    }
-
-    /* Pàgina activa: verde más suave con texto blanco */
-    nav a.active {
-      background-color: #5a8f5a; /* verde suave */
-      color: white;
-      border-color: transparent;
-    }
-
-    /* ─────────── COS CENTRAL ─────────── */
-    .main-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 40px;
-      background-color: #efe6dd;
-    }
-
-    .text-section {
-      flex: 1 1 500px;
-      padding-right: 30px;
-    }
-
-    .text-section h1 {
-      color: #6b8e6d;
-      font-size: 2em;
-    }
-
-    .text-section p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-    }
-
-    .image-section {
-      flex: 1 1 400px;
-      text-align: center;
-    }
-
-    .image-section img {
-      max-width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* ─────────── CATEGORIES ─────────── */
-    .categories {
-      background-color: #d8e8d8;
-      padding: 30px 40px;
-      text-align: center;
-    }
-
-    .categories h2 {
-      color: #6b8e6d;
-    }
-
-    .category-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .category-card {
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin: 10px;
-      width: 250px;
-      transition: transform 0.3s;
-    }
-
-    .category-card:hover {
-      transform: scale(1.03);
-    }
-
-    .category-card h3 {
-      color: #6b8e6d;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background-color: #6b8e6d;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
 </head>
 <body>
 
+  <!-- ─────────── HEADER ─────────── -->
   <header>
     <div class="logo">
       <a href="index.html">
-        <img src="assets\Images\Diseño sin título.png" alt="EcoJoves logo">
+        <img src="assets/Images/Diseño sin título.png" alt="EcoJoves logo">
       </a>
     </div>
-        <nav>
+    <nav class="main-nav">
       <a href="index.html" class="active">Inici</a>
-      <a href="aceites-naturales\index-olis naturals.html">Olis naturals</a>
-      <a href="cojines-terapeuticos\index-coixins terapeutics.html">Coixins Terapèutics</a>
-      <a href="sabons\index-sabond.html">Sabons</a>
-      <a href="espelmes-soja\index-espelmes-soja.html">Espelmes Naturals</a>
-      <a href="productes-terapeutics\index-productes-terapéutics.html">Productes Terapèutics</a>
+      <a href="aceites-naturales/index-olis naturals.html">Olis naturals</a>
+      <a href="cojines-terapeuticos/index-coixins terapeutics.html">Coixins Terapèutics</a>
+      <a href="sabons/index-sabond.html">Sabons</a>
+      <a href="espelmes-soja/index-espelmes-soja.html">Espelmes Naturals</a>
+      <a href="productes-terapeutics/index-productes-terapéutics.html">Productes Terapèutics</a>
     </nav>
   </header>
 
-  <section class="main-content">
-    <div class="text-section">
+  <!-- ─────────── SECCIÓ DE BENVINGUDA ─────────── -->
+  <div class="container">
+    <section class="welcome">
       <h1>Benvinguts a EcoJoves 🌿</h1>
       <p>
         Som un grup d’alumnes de 4t d’ESO de l’Institut Nou d’Argentona i estem treballant plegats per fer realitat el nostre viatge de final de curs a Cantàbria. 
@@ -214,39 +37,38 @@ nav a.active {
         Els productes que oferim estan inspirats en la natura i el benestar, elaborats amb ingredients naturals i respectuosos amb el medi ambient. 
         Creiem que cada petit gest pot marcar la diferència, i per això apostem per productes saludables, de proximitat i amb essències naturals que connecten amb la terra i amb nosaltres mateixos.
       </p>
-    </div>
-    <div class="image-section">
-      <img src="assets\Images\Imatge natura index.jpg" alt="Imatge de natura" />
-    </div>
-  </section>
+      <div style="text-align: center; margin-top: 20px;">
+        <img src="assets/Images/Imatge natura index.jpg" alt="Imatge de natura" style="max-width:100%; border-radius:15px; box-shadow:0 3px 8px rgba(0,0,0,0.1);">
+      </div>
+    </section>
 
-  <section class="categories">
-    <h2>Descobreix els nostres productes</h2>
-    <div class="category-grid">
-      <div class="category-card">
+    <!-- ─────────── LLISTAT DE PRODUCTES ─────────── -->
+    <section class="product-list">
+      <div class="product">
         <h3>Olis naturals</h3>
         <p>Olis essencials purs per cuidar la pell, el cabell i crear ambients relaxants.</p>
       </div>
-      <div class="category-card">
+      <div class="product">
         <h3>Coixins Terapèutics</h3>
         <p>Fets amb materials naturals i aromes suaus per relaxar cos i ment.</p>
       </div>
-      <div class="category-card">
+      <div class="product">
         <h3>Sabons</h3>
         <p>Sabons artesanals amb ingredients naturals que netegen i hidraten la pell.</p>
       </div>
-      <div class="category-card">
+      <div class="product">
         <h3>Espelmes Naturals</h3>
         <p>Espelmes de soja amb aromes naturals que creen una atmosfera càlida i tranquil·la.</p>
       </div>
-      <div class="category-card">
+      <div class="product">
         <h3>Productes Terapèutics</h3>
         <p>Accessoris i complements per cuidar-te i mantenir l’equilibri diari.</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
-  <footer>
+  <!-- ─────────── FOOTER ─────────── -->
+  <footer class="site-footer">
     <p>© 2025 EcoJoves – Institut Nou d’Argentona</p>
   </footer>
 
