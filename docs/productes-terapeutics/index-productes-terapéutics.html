@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productes terapeutics - EcoJoves</title>
+  <title>Productes terapèutics - EcoJoves</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,68 +13,27 @@
     }
 
     /* ─────────── HEADER ─────────── */
-    /* --- Logo i capçalera --- */
-header {
-  display: flex;
-  justify-content: space-between; /* logo a l'esquerra, menú a la dreta */
-  align-items: center;
-  padding: 15px 40px;
-  background-color: #D8E8D8; /* verd menta clar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #D8E8D8;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
 
-/* Logo */
-.logo img {
-  height: 70px; /* canvia la mida si vols */
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-
-/* Menú */
-nav {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-/* Enllaços del menú */
-nav a {
-  text-decoration: none;
-  color: #4A4A48; /* gris fosc */
-  font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 8px;
-  background: transparent;
-  transition: background-color 0.18s ease, color 0.18s ease;
-  border: none;
-  box-shadow: none;
-}
-
-/* Quan passes el ratolí per sobre */
-nav a:hover {
-  background-color: #5A6D5A; /* verd fosc */
-  color: #ffffff; /* text blanc */
-}
-
-/* Botó de la pàgina actual */
-nav a.active {
-  background-color: #5A6D5A; /* verd fosc */
-  color: #ffffff; /* text blanc */
-  border: none;
-  box-shadow: none;
-}
-
-
-    .logo {
-      font-size: 1.8em;
-      font-weight: bold;
-      color: #6b8e6d;
+    .logo img {
+      height: 70px;
+      width: auto;
+      object-fit: contain;
+      display: block;
     }
 
     nav {
       display: flex;
       gap: 12px;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -90,14 +49,12 @@ nav a.active {
     nav a:hover {
       background-color: #66c0ff;
       color: white;
-      border-color: transparent;
-      box-shadow: 0 0 8px rgba(102, 192, 255, 0.4);
+      box-shadow: 0 0 8px rgba(102,192,255,0.4);
     }
 
     nav a.active {
       background-color: #5a8f5a;
       color: white;
-      border-color: transparent;
     }
 
     /* ─────────── MAIN ─────────── */
@@ -146,12 +103,11 @@ nav a.active {
       margin-bottom: 15px;
     }
 
-    /* ─────────── BOTONS VERDS ─────────── */
     .product .btn {
       display: inline-block;
       padding: 8px 14px;
       border-radius: 8px;
-      background-color: #5a8f5a; /* verd suau principal */
+      background-color: #5a8f5a;
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -159,8 +115,8 @@ nav a.active {
     }
 
     .product .btn:hover {
-      background-color: #4d7a4d; /* verd més fosc al hover */
-      box-shadow: 0 0 8px rgba(90, 143, 90, 0.4);
+      background-color: #4d7a4d;
+      box-shadow: 0 0 8px rgba(90,143,90,0.4);
     }
 
     footer {
@@ -170,55 +126,71 @@ nav a.active {
       padding: 15px;
       margin-top: 40px;
     }
+
+    /* ─────────── RESPONSIVE ─────────── */
+    @media (max-width: 900px) {
+      main {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .product {
+        width: 100%;
+      }
+      nav {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-<div class="logo">
-  <a href="index.html">
-    <img src="../assets\Images\Diseño sin título.png" alt="EcoJoves logo">
-  </a>
-</div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../assets/Images/Diseño sin título.png" alt="EcoJoves logo">
+      </a>
+    </div>
     <nav>
       <a href="../index.html">Inici</a>
-      <a href="../aceites-naturales\index-olis naturals.html">Olis naturals</a>
-      <a href="../cojines-terapeuticos\index-coixins terapeutics.html">Coixins Terapèutics</a>
-      <a href="../sabons\index-sabond.html">Sabons</a>
-      <a href="../espelmes-soja\index-espelmes-soja.html">Espelmes Naturals</a>
-      <a href="../productes-terapeutics\index-productes-terapéutics.html"class="active">Productes Terapèutics</a>
+      <a href="../aceites-naturales/index-olis naturals.html">Olis naturals</a>
+      <a href="../cojines-terapeuticos/index-coixins terapeutics.html">Coixins Terapèutics</a>
+      <a href="../sabons/index-sabond.html">Sabons</a>
+      <a href="../espelmes-soja/index-espelmes-soja.html">Espelmes Naturals</a>
+      <a href="../productes-terapeutics/index-productes-terapéutics.html" class="active">Productes Terapèutics</a>
     </nav>
   </header>
 
   <main>
-    <h1>Productes terapeutics</h1>
+    <h1>Productes terapèutics</h1>
 
     <div class="product">
-      <img src="../assets\Images\Rodets de jade i quars rosa.jpg" alt="Rodets de jade i quars rosa">
+      <img src="../assets/Images/Rodets de jade i quars rosa.jpg" alt="Rodets de jade i quars rosa">
       <h3>Rodets de jade i quars rosa</h3>
       <p>Ritual de bellesa per a una pell radiant.</p>
-      <a class="btn" href="../productes-terapeutics\Rodets de jade i quars rosa.html">Veure</a>
+      <a class="btn" href="../productes-terapeutics/Rodets de jade i quars rosa.html">Veure</a>
     </div>
 
     <div class="product">
-      <img src="../assets\Images\Discos de bambu reutilitzables.jpg" alt="Discos de bambu reutilitzables">
+      <img src="../assets/Images/Discos de bambu reutilitzables.jpg" alt="Discos de bambu reutilitzables">
       <h3>Discos de bambu reutilitzables</h3>
       <p>Neteja suau i sostenible.</p>
-      <a class="btn" href="../productes-terapeutics\Discos de bambu reutilitzables.html">Veure</a>
+      <a class="btn" href="../productes-terapeutics/Discos de bambu reutilitzables.html">Veure</a>
     </div>
 
     <div class="product">
-      <img src="../assets\Images\Difusor d'olis essencials.jpg" alt="Difusor d'olis essencials">
+      <img src="../assets/Images/Difusor d'olis essencials.jpg" alt="Difusor d'olis essencials">
       <h3>Difusor d'olis essencials</h3>
       <p>Aromateràpia per a la teva llar.</p>
-      <a class="btn" href="../productes-terapeutics\Difusor d'olis essencials.html">Veure</a>
+      <a class="btn" href="../productes-terapeutics/Difusor d'olis essencials.html">Veure</a>
     </div>
 
     <div class="product">
-      <img src="../assets\Images\Desodorant d'alum.png" alt="Desodorant d'alum">
+      <img src="../assets/Images/Desodorant d'alum.png" alt="Desodorant d'alum">
       <h3>Desodorant d'alum</h3>
       <p>Protecció natural sense perfum ni químics.</p>
-      <a class="btn" href="../productes-terapeutics\Desodorant d'alum.html">Veure</a>
+      <a class="btn" href="../productes-terapeutics/Desodorant d'alum.html">Veure</a>
     </div>
 
   </main>
