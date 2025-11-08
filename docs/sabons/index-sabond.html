@@ -4,18 +4,161 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sabons naturals - EcoJoves</title>
-  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* ─────────── RESET ─────────── */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f2e9;
+      color: #4a4a48;
+    }
+
+    /* ─────────── HEADER ─────────── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #D8E8D8;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo img {
+      height: 70px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4a4a48;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #66c0ff;
+      color: white;
+      box-shadow: 0 0 8px rgba(102, 192, 255, 0.4);
+    }
+
+    nav a.active {
+      background-color: #5a8f5a;
+      color: white;
+    }
+
+    /* ─────────── MAIN ─────────── */
+    main {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    main h1 {
+      width: 100%;
+      text-align: center;
+      color: #6b8e6d;
+      margin-bottom: 30px;
+    }
+
+    .product {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      color: #6b8e6d;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .product .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background-color: #5a8f5a;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product .btn:hover {
+      background-color: #4d7a4d;
+      box-shadow: 0 0 8px rgba(90, 143, 90, 0.4);
+    }
+
+    /* ─────────── FOOTER ─────────── */
+    footer {
+      background-color: #6b8e6d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* ─────────── RESPONSIVE ─────────── */
+    @media (max-width: 800px) {
+      .product {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .product {
+        width: 100%;
+      }
+      nav {
+        justify-content: center;
+        gap: 8px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ─────────── HEADER ─────────── -->
   <header>
     <div class="logo">
-      <a href="../index.html">
+      <a href="index.html">
         <img src="../assets/Images/Diseño sin título.png" alt="EcoJoves logo">
       </a>
     </div>
-    <nav class="main-nav">
+    <nav>
       <a href="../index.html">Inici</a>
       <a href="../aceites-naturales/index-olis naturals.html">Olis naturals</a>
       <a href="../cojines-terapeuticos/index-coixins terapeutics.html">Coixins Terapèutics</a>
@@ -25,59 +168,55 @@
     </nav>
   </header>
 
-  <!-- ─────────── CONTENIDO PRINCIPAL ─────────── -->
-  <div class="container">
-    <section class="product-list">
-      <h1>Sabons</h1>
+  <main>
+    <h1>Sabons</h1>
 
-      <div class="product">
-        <img src="../assets/Images/Sabó d'aloe vera.jpg" alt="Sabó d'aloe vera">
-        <h3>Sabó d'aloe vera</h3>
-        <p>Hidratació i suavitat natural per a la pell.</p>
-        <a class="btn" href="../sabons/Sabó d'aloe vera.html">Veure</a>
-      </div>
+    <div class="product">
+      <img src="../assets/Images/Sabó d'aloe vera.jpg" alt="Sabó d'aloe vera">
+      <h3>Sabó d'aloe vera</h3>
+      <p>Hidratació i suavitat natural per a la pell.</p>
+      <a class="btn" href="../sabons/Sabó d'aloe vera.html">Veure</a>
+    </div>
 
-      <div class="product">
-        <img src="../assets/Images/Sabó de calèndula.jpg" alt="Sabó de calèndula">
-        <h3>Sabó de calèndula</h3>
-        <p>Calma i protecció per a pells delicades.</p>
-        <a class="btn" href="../sabons/Sabó de calèndula.html">Veure</a>
-      </div>
+    <div class="product">
+      <img src="../assets/Images/Sabó de calèndula.jpg" alt="Sabó de calèndula">
+      <h3>Sabó de calèndula</h3>
+      <p>Calma i protecció per a pells delicades.</p>
+      <a class="btn" href="../sabons/Sabó de calèndula.html">Veure</a>
+    </div>
 
-      <div class="product">
-        <img src="../assets/Images/Sabó de cítrics.jpg" alt="Sabó de cítrics">
-        <h3>Sabó de cítrics</h3>
-        <p>Energia i frescor amb aroma revitalitzant.</p>
-        <a class="btn" href="../sabons/Sabó de cítrics.html">Veure</a>
-      </div>
+    <div class="product">
+      <img src="../assets/Images/Sabó de cítrics.jpg" alt="Sabó de cítrics">
+      <h3>Sabó de cítrics</h3>
+      <p>Energia i frescor amb aroma revitalitzant.</p>
+      <a class="btn" href="../sabons/Sabó de cítrics.html">Veure</a>
+    </div>
 
-      <div class="product">
-        <img src="../assets/Images/Sabó de lavanda.jpg" alt="Sabó de lavanda">
-        <h3>Sabó de lavanda</h3>
-        <p>Relax i aromes del camp.</p>
-        <a class="btn" href="../sabons/Sabó de lavanda.html">Veure</a>
-      </div>
+    <div class="product">
+      <img src="../assets/Images/Sabó de lavanda.jpg" alt="Sabó de lavanda">
+      <h3>Sabó de lavanda</h3>
+      <p>Relax i aromes del camp.</p>
+      <a class="btn" href="../sabons/Sabó de lavanda.html">Veure</a>
+    </div>
 
-      <div class="product">
-        <img src="../assets/Images/Sabó de romaní.jpg" alt="Sabó de romaní">
-        <h3>Sabó de romaní</h3>
-        <p>Purifica i revitalitza la pell.</p>
-        <a class="btn" href="../sabons/Sabó de romaní.html">Veure</a>
-      </div>
+    <div class="product">
+      <img src="../assets/Images/Sabó de romaní.jpg" alt="Sabó de romaní">
+      <h3>Sabó de romaní</h3>
+      <p>Purifica i revitalitza la pell.</p>
+      <a class="btn" href="../sabons/Sabó de romaní.html">Veure</a>
+    </div>
 
-      <div class="product">
-        <img src="../assets/Images/Sabó de rosa mosqueta.png" alt="Sabó de rosa mosqueta">
-        <h3>Sabó de rosa mosqueta</h3>
-        <p>Regeneració i bellesa natural.</p>
-        <a class="btn" href="../sabons/Sabó de rosa mosqueta.html">Veure</a>
-      </div>
+    <div class="product">
+      <img src="../assets/Images/Sabó de rosa mosqueta.png" alt="Sabó de rosa mosqueta">
+      <h3>Sabó de rosa mosqueta</h3>
+      <p>Regeneració i bellesa natural.</p>
+      <a class="btn" href="../sabons/Sabó de rosa mosqueta.html">Veure</a>
+    </div>
 
-    </section>
-  </div>
+  </main>
 
-  <!-- ─────────── FOOTER ─────────── -->
-  <footer class="site-footer">
-    <p>© 2025 EcoJoves – Institut Nou d'Argentona</p>
+  <footer>
+    <p>© 2025 EcoJoves – Institut Nou d’Argentona</p>
   </footer>
 
 </body>
