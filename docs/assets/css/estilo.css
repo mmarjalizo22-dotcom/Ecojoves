@@ -58,20 +58,18 @@ header {
   border: 2px solid transparent;
 }
 
-/* Quan passes el ratolí per sobre */
 .main-nav a:hover {
   background-color: #66c0ff; /* blau pastel visible */
   color: white;
   border-color: transparent;
-  box-shadow: 0 0 8px rgba(102, 192, 255, 0.4); /* resplendor suau */
+  box-shadow: 0 0 8px rgba(102, 192, 255, 0.4);
 }
 
-/* Botón de la página actual */
 .main-nav a.active {
-  background-color: #5a8f5a; /* verde suave */
+  background-color: #5a8f5a;
   color: white;
   border-color: transparent;
-  box-shadow: none; /* opcional: mantiene sin sombra */
+  box-shadow: none;
 }
 
 /* --- Contenidor general --- */
@@ -186,15 +184,15 @@ header {
 
 /* --- Peu de pàgina --- */
 .site-footer {
-  background: var(--text-green); /* verde */
-  color: white;                  /* letras blancas */
+  background: var(--text-green);
+  color: white;
   padding: 14px 20px;
   text-align: center;
   margin-top: 36px;
   border-top: 1px solid rgba(0, 0, 0, 0.03);
 }
 
-/* --- Responsive --- */
+/* --- Responsive general --- */
 @media (max-width: 800px) {
   .product {
     width: 45%;
@@ -204,12 +202,36 @@ header {
   }
 }
 
+/* --- Ajustos móviles pequeños --- */
 @media (max-width: 460px) {
   .product {
     width: 100%;
   }
   .main-nav {
-    overflow: auto;
+    flex-wrap: wrap;
+    overflow-x: auto;
     gap: 8px;
+  }
+}
+
+/* --- Ajustes específicos para index.html --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .main-nav a {
+    padding: 6px 10px;
+    font-size: 0.95em;
+  }
+
+  .welcome {
+    padding: 16px;
+  }
+
+  .product-list {
+    justify-content: center;
   }
 }
